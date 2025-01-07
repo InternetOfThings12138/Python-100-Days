@@ -17,7 +17,7 @@ class Triangle(object):
         self._c = c
 
     # 静态方法
-    @staticmethod
+    # @staticmethod
     def is_valid(a, b, c):
         return a + b > c and b + c > a and c + a > b
 
