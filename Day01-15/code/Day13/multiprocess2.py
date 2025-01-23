@@ -23,10 +23,10 @@ if __name__ == '__main__':
     p = multiprocessing.Process(target=sub_task, args=(queue,))
     p.start()
     counter = 0
-    while counter < 1000:
+    while counter < 10:
         queue.put('Ping')
         counter += 1
     p.join()
     print('子任务已经完成.')
-    for _ in range(2000):
+    for _ in range(20):
         print(queue.get(), end='')

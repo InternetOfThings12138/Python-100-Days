@@ -25,7 +25,7 @@ class Account(object):
                 self._lock.release()
 
 
-class AddMoneyThread(Thread):
+class AddMoneyThread(Thre ad):
 
     def __init__(self, account):
         super().__init__()
